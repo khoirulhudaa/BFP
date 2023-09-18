@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer, Hero, Navbar, Section1 } from "../components";
-import "../App.css";
+import "../index.css";
 
 const Homepage = () => {
     return (

@@ -34,7 +34,7 @@ const AccordionItem = ({ title, content }) => {
 const Section1 = () => {
     return (
         <>
-            <div className="section-testimoni-mz1">
+            <div className="section-testimoni-mz1" id="introduction">
                 <p
                     data-aos="fade-up"
                     className="parag-testi-mz1 aos-init aos-animate"
@@ -89,7 +89,7 @@ const Section1 = () => {
                 Firewall function 🧱
             </h1>
 
-            <div className="container-dmf">
+            <div className="container-dmf" id="function">
                 <div className="child-dmf child-dmf-2">
                     <img
                         data-aos="fade-up"
@@ -190,7 +190,7 @@ const Section1 = () => {
                 Protection 🛡️
             </h1>
 
-            <div className="container-section6-section6mz4">
+            <div className="container-section6-section6mz4" id="protection">
                 <div className="section6-content-section6mz4">
                     <div>
                         <h1
@@ -216,7 +216,7 @@ const Section1 = () => {
                 </div>
             </div>
 
-            <div className="section5-mz1">
+            <div className="section5-mz1" id="type">
                 <p
                     data-aos="fade-up"
                     className="p-section5-body-mz1 aos-init aos-animate"
@@ -299,7 +299,7 @@ const Section1 = () => {
                 </div>
             </div>
 
-            <section className="section4-mz2">
+            <section className="section4-mz2" id="question">
                 <h1 className="section4-mz2-title">General questions</h1>
                 <p className="section4-mz2-paragh">
                     We tried to answer most common questions, if you have any
@@ -334,7 +334,7 @@ const Section1 = () => {
                         you were looking for. Please contact us and we'll be
                         happy to help.
                     </p>
-                    <button>
+                    <button id="contact">
                         <img
                             src="https://images-builder.vercel.app/img/vector_section4mz2.svg"
                             alt="icon"

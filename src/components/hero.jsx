@@ -1,18 +1,11 @@
 import React from "react";
-import {
-    Firewall1,
-    Firewall2,
-    Firewall3,
-    Firewall4,
-    Square,
-} from "../assets/images";
+import { Firewall1, Firewall2, Firewall3, Firewall4 } from "../assets/images";
 import "../assets/styles/hero.css";
 
 const Hero = () => {
     return (
         <>
             <div className="container-section4-section4mz4">
-                <img src={Square} alt="square" className="square" />
                 <h1
                     data-aos="fade-up"
                     className="section4-title-section4mz4 aos-init aos-animate"

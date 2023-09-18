@@ -14,16 +14,19 @@ const Navbar = () => {
                 />
                 <ul className="navbar-item-mz2">
                     <li>
-                        <a href="#product">Product</a>
+                        <a href="#introduction">Introduction</a>
                     </li>
                     <li>
-                        <a href="#implementation">Implementation</a>
+                        <a href="#function">Function</a>
                     </li>
                     <li>
-                        <a href="#benefits">Benefits</a>
+                        <a href="#protection">Protection</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact Us</a>
+                        <a href="#protection">Type Firewall</a>
+                    </li>
+                    <li>
+                        <a href="#question">Question</a>
                     </li>
                     <li>
                         <a href="#product">
