@@ -247,8 +247,9 @@ const Section1 = () => {
                                     Lörem ipsum astrobel sar direlig. Kronde est
                                     konfoni med kelig. Terabel pov astrobel sar
                                 </p>
+                                <br />
+                                <button>Let's work</button>
                             </div>
-                            <button>Let's work</button>
                         </div>
                     </div>
                     <div className="card-section-right-mz1">
@@ -259,7 +260,7 @@ const Section1 = () => {
                                         data-aos="fade-up"
                                         className="aos-init aos-animate"
                                     >
-                                        Website Design
+                                        Packet Filtering Firewall
                                     </h1>
                                     <p
                                         data-aos="fade-up"
@@ -269,6 +270,7 @@ const Section1 = () => {
                                         est konfoni med kelig. Terabel pov
                                         astrobel sar
                                     </p>
+                                    <button>Let's work</button>
                                 </div>
                             </div>
                         </div>
@@ -279,7 +281,7 @@ const Section1 = () => {
                                         data-aos="fade-up"
                                         className="aos-init aos-animate"
                                     >
-                                        Website Design
+                                        Proxy Firewall
                                     </h1>
                                     <p
                                         data-aos="fade-up"
@@ -289,6 +291,7 @@ const Section1 = () => {
                                         est konfoni med kelig. Terabel pov
                                         astrobel sar
                                     </p>
+                                    <button>Let's work</button>
                                 </div>
                             </div>
                         </div>

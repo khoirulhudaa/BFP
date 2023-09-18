@@ -359,8 +359,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
+    width: 90%;
     line-height: 28px;
-    color: #d1d4dc;
+    color: #ffffff;
     margin-top: 10px;
 }
 
@@ -404,10 +405,38 @@
 }
 
 .card-sections2-mz1 {
-    background-image: url("https://images-builder.vercel.app/img/Frame16_section5mz1.png");
+    background-image: url("../images/firewall1.jpg");
     background-size: cover;
     width: 558px;
+    overflow: hidden;
+    position: relative;
     height: 252px;
+}
+
+.card-sections2-mz1::before {
+    position: absolute;
+    content: "";
+    border-radius: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(73, 73, 73, 0.329), #1f1f1fcb);
+}
+
+.card-sections2-mz1 button {
+    width: 200px;
+    height: 51px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    filter: drop-shadow(0px 25px 30px rgba(0, 65, 232, 0.1));
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
 }
 
 .card-body2-mz1 {
@@ -424,6 +453,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
+    margin-top: -60px;
     line-height: 43px;
     color: #ffffff;
 }
@@ -433,15 +463,44 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-    color: #d1d4dc;
+    color: #ffffff;
     margin-top: 10px;
 }
 
 .card-sections3-mz1 {
-    background-image: url("https://images-builder.vercel.app/img/Frame17_section5mz1.png");
+    background-image: url("../images/firewall2.webp");
     background-size: cover;
     width: 558px;
+    position: relative;
+    overflow: hidden;
     height: 252px;
+}
+
+.card-sections3-mz1::before {
+    position: absolute;
+    content: "";
+    border-radius: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(73, 73, 73, 0.329), #1f1f1fcb);
+}
+
+
+.card-sections3-mz1 button {
+    width: 200px;
+    height: 51px;
+    border: 1px solid #ffffff;
+    margin-top: 20px;
+    background: transparent;
+    filter: drop-shadow(0px 25px 30px rgba(0, 65, 232, 0.1));
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
 }
 
 .card-body3-mz1 {
@@ -458,6 +517,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
+    margin-top: -60px;
     line-height: 43px;
     color: #ffffff;
 }
