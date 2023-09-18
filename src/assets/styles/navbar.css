@@ -13,7 +13,6 @@
 
 .navbar-mz2 img {
     position: relative;
-    /* top: -5px; */
     width: 15%;
 }
 
@@ -75,9 +74,118 @@
     display: none;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 1007px) {
+.sidebare {
+    display: none;
+}
+
+.btn-toggle, .btn-close {
+    display: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 750px) {
     .navbar-mz2 {
-        padding: 30px;
+        padding: 8px 30px;
+    }
+
+    .btn-toggle {
+        cursor: pointer;
+        border: 1px solid rgb(110, 110, 110);
+        padding: 4px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: max-content;
+        height: max-content;
+    }
+
+    .btn-toggle span {
+        width: 32px;
+        height: 5px;
+        margin: 2px 0;
+        display: block;
+        background-color: rgb(85, 85, 85);
+        border-radius: 4px;
+    }
+
+    .sidebare {
+        display: inline;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: -100%;
+        overflow: hidden;
+        z-index: 222;
+        background-color: white;
+        padding: 35px 30px;
+        transition: 1s;
+        top: 0;
+        color: black;
+    }
+    
+    .sidebarOpen {
+        display: inline;
+        width: 100vw;
+        transition: 1s;
+        overflow: hidden;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        z-index: 222;
+        background-color: white;
+        padding: 35px 30px;
+        top: 0;
+        color: black;
+    }
+
+    .btn-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        border-radius: 9999px;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+    }
+
+    .btn-close:active {
+        transform: scale(0.98);
+        transition: 0.2s;
+    }
+
+    .btn-close:hover {
+        transition: 0.2s;
+        filter: brightness(90%);
+    }
+
+    .sidebarOpen ul {
+        display: block;
+    }
+
+    .sidebarOpen ul li {
+        list-style: none;
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .sidebare ul {
+        display: block;
+    }
+
+    .sidebare ul li {
+        list-style: none;
+        margin-bottom: 30px;
+        font-size: 16px;
     }
 
     .navbar-mz2 img {
@@ -92,7 +200,7 @@
         gap: 10px;
     }
 
-    .navbar-item-mz2 li a {
+    #list1 {
         display: none;
     }
 
@@ -110,7 +218,7 @@
         gap: 10px;
     }
 
-    .navbar-item-mz2 li a {
+    #list1 {
         display: none;
     }
 

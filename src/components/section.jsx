@@ -86,7 +86,7 @@ const Section1 = () => {
                 data-aos="fade-up"
                 className="title-testi-dmf aos-init aos-animate"
             >
-                Firewall function 🧱
+                <span className="fw">Firewall</span> function 🧱
             </h1>
 
             <div className="container-dmf" id="function">
@@ -227,7 +227,7 @@ const Section1 = () => {
                     data-aos="fade-up"
                     className="title-section5-mz1 aos-init aos-animate"
                 >
-                    Firewall Type 🧱
+                    <span className="fw">Firewall</span> Type 🧱
                 </h1>
                 <br />
                 <div className="container-card-mz1">
