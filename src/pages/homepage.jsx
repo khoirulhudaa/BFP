@@ -11,6 +11,7 @@ const Homepage = () => {
             {/* Komponen Hero */}
             <Hero />
 
+            {/* Komponen Section Content */}
             <Section1 />
 
             {/* Komponen Footer */}
