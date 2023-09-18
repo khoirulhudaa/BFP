@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../assets/styles/section1.css";
 import { Firewall2 } from "../assets/images";
+import { Link } from "react-router-dom";
 
 const AccordionItem = ({ title, content }) => {
     const [active, setActive] = useState(false);
@@ -248,7 +249,9 @@ const Section1 = () => {
                                     konfoni med kelig. Terabel pov astrobel sar
                                 </p>
                                 <br />
-                                <button>Let's work</button>
+                                <Link to={'/Next-Generation'}>
+                                    <button>Let's work</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -270,7 +273,9 @@ const Section1 = () => {
                                         est konfoni med kelig. Terabel pov
                                         astrobel sar
                                     </p>
-                                    <button>Let's work</button>
+                                    <Link to={'/Packet-Filtering'}>
+                                        <button>Let's work</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -291,7 +296,9 @@ const Section1 = () => {
                                         est konfoni med kelig. Terabel pov
                                         astrobel sar
                                     </p>
-                                    <button>Let's work</button>
+                                    <Link to={'/Proxy-Firewall'}>
+                                        <button>Let's work</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

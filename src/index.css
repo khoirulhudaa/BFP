@@ -25,3 +25,14 @@ body {
 .menuProducts ::-webkit-scrollbar {
     display: none;
 }
+
+.load {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

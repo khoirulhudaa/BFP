@@ -1,5 +1,5 @@
 .navbar-mz2 {
-    padding: 2px 40px;
+    padding: 12px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +13,7 @@
 
 .navbar-mz2 img {
     position: relative;
-    width: 15%;
+    width: 25%;
 }
 
 .logo-mz2 {
