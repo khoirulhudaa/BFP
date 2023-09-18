@@ -1,6 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/styles/section1.css";
 import { Firewall2 } from "../assets/images";
+
+const AccordionItem = ({ title, content }) => {
+    const [active, setActive] = useState(false);
+
+    const toggleAccordion = () => {
+        setActive(!active);
+    };
+
+    return (
+        <>
+            <button
+                className={`accordion-mz2 ${active ? "active" : ""}`}
+                onClick={toggleAccordion}
+            >
+                <span>{title}</span>
+                <img
+                    src="https://images-builder.vercel.app/img/add_section4mz2.svg"
+                    alt="icon"
+                />
+            </button>
+            <div
+                className="panel-mz2"
+                style={{ display: active ? "block" : "none" }}
+            >
+                {content}
+            </div>
+        </>
+    );
+};
 
 const Section1 = () => {
     return (
@@ -101,8 +130,10 @@ const Section1 = () => {
                         data-aos="fade-up"
                         className="text-child-dmf aos-init aos-animate"
                     >
-                        Second, You get a mysterious message saying your computer is in danger. If you don't immediately 
-                        install certain programs, the computer will die in a matter of seconds.
+                        Second, You get a mysterious message saying your
+                        computer is in danger. If you don't immediately install
+                        certain programs, the computer will die in a matter of
+                        seconds.
                     </small>
                 </div>
                 <div className="child-dmf child-dmf-2">
@@ -122,9 +153,10 @@ const Section1 = () => {
                         data-aos="fade-up"
                         className="text-child-dmf aos-init aos-animate"
                     >
-                        The firewall also functions to limit and monitor the bandwidth services that can be used. 
-                        Furthermore, you can also set limits for each content in the form of images, videos, 
-                        music or other entertainment.
+                        The firewall also functions to limit and monitor the
+                        bandwidth services that can be used. Furthermore, you
+                        can also set limits for each content in the form of
+                        images, videos, music or other entertainment.
                     </small>
                 </div>
                 <div className="child-dmf child-dmf-2">
@@ -144,9 +176,9 @@ const Section1 = () => {
                         data-aos="fade-up"
                         className="text-child-dmf aos-init aos-animate"
                     >
-                        access various content or websites that are blocked by the provider. 
-                        This can certainly increase productivity and the data sharing system 
-                        that will be implemented.
+                        access various content or websites that are blocked by
+                        the provider. This can certainly increase productivity
+                        and the data sharing system that will be implemented.
                     </small>
                 </div>
             </div>
@@ -195,14 +227,9 @@ const Section1 = () => {
                     data-aos="fade-up"
                     className="title-section5-mz1 aos-init aos-animate"
                 >
-                    Firewall Type 
+                    Firewall Type 🧱
                 </h1>
-                <p
-                    data-aos="fade-up"
-                    className="p-section5-body-mz1 aos-init aos-animate"
-                >
-                    There are several types of firewalls that you need to know about :
-                </p>
+                <br />
                 <div className="container-card-mz1">
                     <div className="card-section5-left-mz1">
                         <div className="card-body-mz1">
@@ -211,7 +238,7 @@ const Section1 = () => {
                                     data-aos="fade-up"
                                     className="aos-init aos-animate"
                                 >
-                                    Website Design
+                                    Next Generation Firewall
                                 </h1>
                                 <p
                                     data-aos="fade-up"
@@ -268,6 +295,51 @@ const Section1 = () => {
                     </div>
                 </div>
             </div>
+
+            <section className="section4-mz2">
+                <h1 className="section4-mz2-title">General questions</h1>
+                <p className="section4-mz2-paragh">
+                    We tried to answer most common questions, if you have any
+                    additional, please get in touch team
+                </p>
+                <div>
+                    <AccordionItem
+                        title="What is a firewall?"
+                        content="A firewall is a security system used to protect a computer network from external threats, such as hacker attacks, malware, and unauthorized access. It acts as a barrier between the internal and external network."
+                    />
+                    <AccordionItem
+                        title="What are the main functions of a firewall?"
+                        content="The primary functions of a firewall are to monitor, control, and filter incoming and outgoing data traffic. It can block unauthorized access, protect sensitive data, and prevent cyberattacks."
+                    />
+                    <AccordionItem
+                        title="What is the difference between hardware-based and software-based firewalls?"
+                        content="A hardware-based firewall is a physical device that stands alone and serves as a physical barrier between networks. A software-based firewall is a program installed on a computer system and runs as an application. Both serve the same role in network security but are built differently."
+                    />
+                    <AccordionItem
+                        title="What is an application firewall?"
+                        content="An application firewall, also known as Layer 7 firewall, is a type of firewall that can understand specific application protocols and inspect data packets at the application level. It allows for greater control over specific applications and can enforce policies based on those applications."
+                    />
+                    <AccordionItem
+                        title="Why is a firewall important in network security?"
+                        content="A firewall is essential in network security because it protects the network from potential external threats that could compromise or steal data. It helps identify and prevent attacks, control access to network resources, and maintain the confidentiality and integrity of data. Therefore, a firewall is a critical defense layer in safeguarding networks and computer systems."
+                    />
+                </div>
+                <div className="section4-bottom">
+                    <h1>Still have a questions?</h1>
+                    <p>
+                        We're sorry we couldn't provide you with the information
+                        you were looking for. Please contact us and we'll be
+                        happy to help.
+                    </p>
+                    <button>
+                        <img
+                            src="https://images-builder.vercel.app/img/vector_section4mz2.svg"
+                            alt="icon"
+                        />
+                        <span>Contact us</span>
+                    </button>
+                </div>
+            </section>
         </>
     );
 };
