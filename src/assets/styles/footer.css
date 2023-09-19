@@ -43,6 +43,12 @@
     width: 35vw;
 }
 
+.footer-hdm .logo {
+    width: 60%;
+    background-color: white;
+    border-radius: 20px;
+}
+
 .footer-right-hdm {
     width: 65vw;
     z-index: 2;
